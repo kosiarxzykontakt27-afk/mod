@@ -64,9 +64,9 @@ public final class Builtins {
         }
     }
 
-    public static class Direction extends Module {
+    public static class DirectionHud extends Module {
         private static final String[] N = {"Po\u0142udnie", "Zach\u00f3d", "P\u00f3\u0142noc", "Wsch\u00f3d"};
-        public Direction() { super("mods", "World", "Direction", "Kierunek patrzenia"); }
+        public DirectionHud() { super("mods", "World", "Direction", "Kierunek patrzenia"); }
         @Override public void onRender(DrawContext c) {
             if (mc.player == null) return;
             float yaw = MathHelper.wrapDegrees(mc.player.getYaw());
