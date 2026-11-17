@@ -29,7 +29,7 @@ public class ModuleManager {
         add(new Builtins.Speed());
         // Mods / World
         add(new Builtins.Coordinates().on());
-        add(new Builtins.Direction());
+        add(new Builtins.DirectionHud());
         add(new Builtins.Clock());
         // Mods / Combat (cheaty)
         add(new Builtins.Hitboxes().slider("Rozmiar", 0.1f, 1.5f, 0.4f, ""));
